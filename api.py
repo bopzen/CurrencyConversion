@@ -13,7 +13,6 @@ def read_api_key(json_file):
 
 # Getting Historical Rate from the API
 def get_historical_rate(date, base_currency, target_currency):
-    print('getting rate from api')
     url = f"https://api.fastforex.io/historical?date={date}&from={base_currency}&to={target_currency}&api_key={settings.API_KEY}"
     headers = {"accept": "application/json"}
 

@@ -103,5 +103,12 @@
         "base_currency": "USD",
         "target_currency": "GBP",
         "converted_amount": 9.69
+    },
+    {
+        "date": "2024-05-31",
+        "amount": 10.0,
+        "base_currency": "GBP",
+        "target_currency": "USD",
+        "converted_amount": 12.73
     }
 ]
