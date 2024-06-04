@@ -5,5 +5,12 @@
         "base_currency": "EUR",
         "target_currency": "USD",
         "converted_amount": 163.74
+    },
+    {
+        "date": "2024-05-31",
+        "amount": 124.45,
+        "base_currency": "USD",
+        "target_currency": "JPY",
+        "converted_amount": 19549.24
     }
 ]
