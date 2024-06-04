@@ -16,8 +16,8 @@ def get_historical_rate(date, base_currency, target_currency):
     url = f"https://api.fastforex.io/historical?date={date}&from={base_currency}&to={target_currency}&api_key={settings.API_KEY}"
     headers = {"accept": "application/json"}
 
-    # Verify option is set to False due to security limitations on my work computer
-    response = requests.get(url, headers=headers, verify=False)
+    # Verify option should be set to False if used on work computers with stricter security policies
+    response = requests.get(url, headers=headers)
     data = response.json()
     return data['results'][target_currency]
 

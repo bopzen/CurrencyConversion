@@ -12,5 +12,33 @@
         "base_currency": "USD",
         "target_currency": "JPY",
         "converted_amount": 19549.24
+    },
+    {
+        "date": "2024-06-03",
+        "amount": 150.87,
+        "base_currency": "USD",
+        "target_currency": "CHF",
+        "converted_amount": 135.3
+    },
+    {
+        "date": "2024-06-03",
+        "amount": 1268.74,
+        "base_currency": "GBP",
+        "target_currency": "NZD",
+        "converted_amount": 2622.85
+    },
+    {
+        "date": "2024-06-03",
+        "amount": 123.45,
+        "base_currency": "EUR",
+        "target_currency": "USD",
+        "converted_amount": 134.2
+    },
+    {
+        "date": "2024-06-03",
+        "amount": 4560.25,
+        "base_currency": "USD",
+        "target_currency": "PLN",
+        "converted_amount": 17964.06
     }
 ]
