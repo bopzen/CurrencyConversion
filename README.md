@@ -7,6 +7,7 @@
 - Then the user inputs **Amount**, **Base Currency** and **Target Currency** and receives the converted amount
 
 ### Screenshot:
+
 ![screenshot.png](screenshot.png)
 
 ### Basic technical description

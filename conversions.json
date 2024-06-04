@@ -40,5 +40,26 @@
         "base_currency": "USD",
         "target_currency": "PLN",
         "converted_amount": 17964.06
+    },
+    {
+        "date": "2024-06-03",
+        "amount": 10.0,
+        "base_currency": "EUR",
+        "target_currency": "USD",
+        "converted_amount": 10.87
+    },
+    {
+        "date": "2024-06-03",
+        "amount": 123.45,
+        "base_currency": "EUR",
+        "target_currency": "USD",
+        "converted_amount": 134.2
+    },
+    {
+        "date": "2024-06-03",
+        "amount": 5478.56,
+        "base_currency": "NZD",
+        "target_currency": "JPY",
+        "converted_amount": 528679.78
     }
 ]
