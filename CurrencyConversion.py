@@ -8,7 +8,6 @@ from utils import get_valid_amount, load_currency_codes, get_valid_currency, sav
 # Passing date as a command-line argument at startup
 if len(sys.argv) > 1:
     DATE = sys.argv[1]
-    print(f"Provided date: {DATE}")
 else:
     EXECUTABLE_FILENAME = sys.argv[0]
     print('You need to provide a date as an argument')
