@@ -5,16 +5,20 @@ import sys
 import settings
 
 
+# Loading all ISO 4217 currency codes from CSV file
 def load_currency_codes():
     currency_codes = set()
     filename = settings.CURRENCY_CODES_CSV
+
     with open(filename, 'r') as file:
         csvfile = csv.reader(file)
         for line in csvfile:
             currency_codes.add(line[0])
+
     return currency_codes
 
 
+# Validation of Amount input
 def get_valid_amount():
     while True:
         amount = input()
@@ -30,6 +34,7 @@ def get_valid_amount():
             print("Invalid input. Please enter a valid float with two decimal places.")
 
 
+# Validation of Base Currency and Target Currency input
 def get_valid_currency():
     while True:
         currency = input()
@@ -44,6 +49,7 @@ def get_valid_currency():
             print("Invalid currency code. Currencies must be in ISO 4217 three letter currency code format")
 
 
+# Saving successful conversion to conversions.json file
 def save_conversion_to_json(date, amount, base_currency, target_currency, converted_amount):
     conversion = {
         "date": date,
@@ -52,6 +58,7 @@ def save_conversion_to_json(date, amount, base_currency, target_currency, conver
         "target_currency": target_currency,
         "converted_amount": round(converted_amount, 2)
     }
+
     if os.path.exists(settings.CONVERSIONS_JSON):
         with open(settings.CONVERSIONS_JSON, 'r') as json_file:
             conversions = json.load(json_file)
@@ -64,6 +71,7 @@ def save_conversion_to_json(date, amount, base_currency, target_currency, conver
         json.dump(conversions, json_file, indent=4)
 
 
+# Checking for exit command
 def check_exit(command):
     if command.lower() == 'end':
         sys.exit(0)
